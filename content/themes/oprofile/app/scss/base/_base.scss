@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $color-text;
+  background-color: $color-bg;
+
+  @media (min-width: $breakpoint-extra-large) {
+
+    width: $breakpoint-extra-large;
+    margin: auto;
+    background-color: lighten($color-bg-footer, 65%);
+  }
+
+  &.menu-visible {
+
+    .wrapper {
+      filter: blur(8px);
+
+    }
+
+    .menu {
+      visibility: visible;
+    }
+  }
+}
+
+a {
+  color: $color-text;
+  text-decoration: none;
+}
